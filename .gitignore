@@ -1,27 +1,64 @@
 # Environment files
 .env
+.env.*
 !.env.example
 
 # Dependencies
 node_modules/
-frontend/.next/
+.next/
+dist/
+build/
 frontend/out/
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+env/
 
 # Test and coverage artifacts
 .pytest_cache/
 .coverage
 htmlcov/
+coverage/
+*.tsbuildinfo
+
+# Private keys and certificates
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+
+# Database dumps and backups (keep SQL source files visible)
+dumps/
+db_backups/
+*.dump
+*.pgdump
+*.sql.backup
+*.db.backup
+*.sql.gz
+*.sql.bz2
+*.sql.xz
+*.sql.zip
+*.sql.bak
+*.db.bak
+*.sqlite.bak
+*.sqlite3.bak
+*_dump.sql
+dump.sql
 
 # IDE and OS files
 .idea/
 .vscode/
 *.swp
+*.swo
+*~
 .DS_Store
+._*
 Thumbs.db
+Desktop.ini
 
 # Local data
 *.log
